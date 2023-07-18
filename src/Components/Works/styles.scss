@@ -1,0 +1,149 @@
+@use '../../styles/vars';
+
+.work {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 2rem;
+}
+
+.work-title {
+  display: flex;
+  align-items: center;
+}
+
+.work-title::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  background-color: #152d50;
+  margin-left: 20px;
+}
+
+.inner {
+  display: flex;
+}
+
+button {
+  border: 0px;
+}
+
+.tablist {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  &-item {
+    background-color: transparent;
+    color: white;
+    margin: 0px;
+    transition: 350ms;
+    padding: 20px;
+    border-left: #152d50 2px solid;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Tilt Neon', cursive;
+  }
+
+  &-item:hover {
+    color: vars-color;
+    cursor: pointer;
+    background-color: #152d50;
+  }
+
+  &-item--active {
+    color: #00d8ff;
+    background-color: #152d50;
+    padding: 20px;
+    border-left: 3px #00d8ff solid;
+    transition: none;
+    text-align: left;
+  }
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.content-tabs {
+  width: 70%;
+  height: auto;
+  margin-left: 15px;
+}
+
+.tab-title {
+  margin: 0px;
+}
+
+.tab-date {
+  margin: 0px;
+  font-size: 0.9rem;
+  color: #ccd6f6;
+}
+
+.company-span {
+  color: #00d8ff;
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', cursive;
+  margin-left: 0.8rem;
+}
+
+//RESPONSIVE DESIGN
+@media screen and (max-width: 750px) {
+
+  .tablist-item {
+    font-size: 0.9rem;
+  }
+
+  .tab-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .tablist-item {
+    font-size: 0.8rem;
+  }
+
+  .tab-description {
+    font-size: 0.9rem;
+  }
+
+  .tab-title {
+    font-size: 0.9rem;
+  }
+
+  .tab-description__list--item {
+    font-size: 0.9rem;
+  }
+
+  .company-span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  .tablist-item {
+    font-size: 0.8rem;
+  }
+
+  .tab-description {
+    font-size: 0.9rem;
+  }
+
+  .tab-title {
+    font-size: 0.9rem;
+  }
+
+  .company-span {
+    font-size: 0.9rem;
+  }
+}

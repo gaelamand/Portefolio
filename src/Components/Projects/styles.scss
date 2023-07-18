@@ -1,0 +1,248 @@
+#projects {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 2rem;
+}
+
+#projects {
+
+.projects-header {
+  margin: 0 auto;
+  max-width: 900px;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card-wrapper {
+  background: white;
+  width: 20rem;
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// --------------- BACKGROUND -------------------
+.portfolio {
+  background: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+.card-image-container {
+  position: relative;
+  height: 12rem;
+  margin-bottom: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.troisblock-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.oplayground-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.portfolio-img {
+  width: 17rem;
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+}
+
+.card-reference {
+  color: #0a192f;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.card-title {
+  color: #0a192f;
+  margin: 0 0 1rem 0;
+}
+
+.card-description {
+  color: #9E9E9E;
+  font-size: 0.9rem;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.card-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #0a192f;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+}
+
+.card-tag {
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+// ---------- TAGS ----------
+.card-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.html {
+  background: rgb(255, 128, 0);
+}
+
+.javascript {
+  background: rgb(255, 234, 0);
+}
+
+.react {
+  background: #00d8ff;
+}
+
+.scss {
+  background: #f396c4;
+}
+
+.tailwind {
+  background: #67E8F9;
+}
+
+.daisyui {
+  background: #7C3AED;
+}
+
+.sequelize {
+  background: #52b0e7;
+}
+
+.postgre {
+  background: #b9ddf9;
+}
+
+.node {
+  background: rgb(125, 222, 125);
+}
+
+.express {
+  background: rgb(208, 208, 208);
+}
+
+.ejs {
+  background: #e9b7ca;
+}
+// ---------- FIN TAGS ----------
+
+.card-links__3block {
+  display: flex;
+  overflow: hidden;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 180%;
+}
+
+.card-links__oplayground {
+  display: flex;
+  overflow: hidden;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 180%;
+}
+
+.card-links__portfolio {
+  display: flex;
+  overflow: hidden;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 180%;
+}
+
+.card-link__oplayground {
+  background: #1ab161;
+  padding: 1rem;
+  transition: .3s;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+  
+}
+
+.card-link__3block {
+  background: #0f94d1;
+  padding: 1rem;
+  transition: .3s;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-link__portfolio {
+  background: #6600ff;
+  padding: 1rem;
+  transition: .3s;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-link:hover {
+  filter: brightness(1.2);
+}
+
+a {
+  width: 50%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.blocked-link {
+  cursor: not-allowed;
+}
+
+.view {
+  border-right: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-link__view--image {
+  width: 2rem;
+}
+
+.card-link__view--text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+}
+
+//RESPONSIVE
+
+@media screen and (max-width: 750px) {
+
+  #projects {
+    padding: 2rem;
+  }
+}

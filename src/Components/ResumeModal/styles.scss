@@ -1,0 +1,49 @@
+.modal-resume {
+  width: 10rem;
+  position: fixed;
+  bottom: 5rem;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.modal-description {
+  margin-bottom: 0.5rem;
+}
+
+.resume-image__container {
+  width: 10rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  overflow: hidden;
+  filter: brightness(0.3);
+  transition: 1s;
+}
+
+.image-container__full {
+  width: 30rem;
+  position: relative;
+  left: 2rem;
+  bottom: 2rem;
+  transition: 1s;
+}
+
+.resume-image {
+  width: 100%;
+}
+
+.resume-image:hover {
+  cursor: pointer;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  scale: 1.5;
+  transition: .2s;
+}
+
+.modal-icon:hover {
+  cursor: pointer;
+}

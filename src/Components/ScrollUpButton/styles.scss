@@ -1,0 +1,21 @@
+.scrollup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  background-color: #e6f1ff;
+  color: #0a192f;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: .2s;
+  z-index: 1;
+}
+
+.scrollup-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

@@ -1,0 +1,149 @@
+.skills {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 2rem;
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.languages-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  text-decoration: underline;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 20%;
+}
+
+.skill-icon {
+  transform: scale(4);
+  transition: .3s;
+}
+
+.skill-name {
+  text-align: center;
+}
+
+// HOVER ON ICONS
+.skill-icon__html:hover {
+  color: rgb(255, 111, 0);
+}
+
+.skill-icon__css:hover {
+  color: rgb(0, 123, 255);
+}
+
+.skill-icon__js:hover {
+  color: rgb(255, 221, 0);
+}
+
+.skill-icon__sql:hover {
+  color: rgb(0, 94, 255);
+}
+
+.skill-icon__react:hover {
+  color: #00d8ff;
+}
+
+.skill-icon__redux:hover {
+  color: rgb(70, 0, 128);
+}
+
+.skill-icon__node:hover {
+  color: rgb(72, 179, 65);
+}
+
+.skill-icon__express:hover {
+  color: rgb(179, 179, 179);
+}
+
+.skill-icon__postgre:hover {
+  color: rgb(81, 113, 161);
+}
+
+.skill-icon__sequelize:hover {
+  color: #52B0E7;
+}
+
+.skill-icon__api:hover {
+  color: black;
+}
+
+.skill-icon__ejs:hover {
+  color: purple;
+}
+
+.skill-icon__scss:hover {
+  color: rgb(255, 147, 165);
+}
+
+.skill-icon__git:hover {
+  color: #E84D31;
+}
+
+.skill-icon__github:hover {
+  color: black;
+}
+
+.skill-icon__tailwind:hover {
+  color: #67E8F9
+}
+
+.skill-icon__figma:hover {
+  color: #f76e5f;
+}
+
+.skill-icon__project:hover {
+  color: rgb(255, 97, 97);
+}
+
+.skill-icon__scrum:hover {
+  color: rgb(0, 174, 255);
+}
+
+.skill-icon__excel:hover {
+  color: rgb(22, 124, 39);
+}
+
+.skill-icon__sap:hover {
+  color: rgb(40, 8, 156);
+}
+
+// REPONSIVE
+
+@media screen and (max-width: 450px) {
+
+  .skill-icon {
+    transform: scale(3);
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  .skill-icon {
+    transform: scale(2);
+  }
+
+  .skill-name {
+    font-size: 0.8rem;
+  }
+}

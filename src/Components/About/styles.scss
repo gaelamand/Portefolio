@@ -1,0 +1,87 @@
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-container-left {
+  width: 70%;
+}
+
+.about-text {
+  line-height: 1.7;
+}
+
+.about-container-right {
+  display: flex;
+  width: 30%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.about-container-right:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: .3s;
+  background: linear-gradient(to bottom, rgb(0, 64, 255, 0.1) 0%,rgb(0, 213, 255, 0.2) 100%);
+}
+
+.personal-picture {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.about-list-item {
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-list-item:hover {
+  color: #00d8ff;
+  cursor: default;
+}
+
+// REPONSIVE DESIGN
+@media screen and (max-width: 750px) {
+
+  .about {
+    padding: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container-left {
+    width: 100%;
+    order: 2;
+  }
+
+  .about-container-right {
+    width: 70%;
+    margin: 0 auto;
+    order: 1;
+  }
+}

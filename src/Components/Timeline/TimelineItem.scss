@@ -1,0 +1,55 @@
+// CSS FOR TIMELINE CARDS
+
+h3,h4,p {
+  margin: 0;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin: 10px 0;
+  width: 50%;
+  z-index: 1;
+}
+
+.timeline-item__content {
+  width: 50%;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background: #ccd6f6;
+  color: #0a192f;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.school-place {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 830px) {
+  
+  .timeline-item:nth-child(odd) {
+    width: 100%;
+    align-self: normal;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline-item__content {
+    width: 100%;
+  }
+}
