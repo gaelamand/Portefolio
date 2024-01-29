@@ -1,11 +1,12 @@
 import './styles.scss';
 import WebDev from '../../assets/projects/web-development.png';
 import oplayground from '../../assets/projects/oplayground.jpg';
-import troisblock from '../../assets/projects/troisblock.png';
+import BTP from '../../assets/projects/BTP.png';
+import girls from '../../assets/projects/girlshead.png';
 
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si"
+import { SiTailwindcss } from "react-icons/si"  
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
@@ -48,27 +49,25 @@ const Projects = () => (
       {/* ---------------------------------------------------------------- */}
       <div className="card-wrapper">
         <div className='card-image-container 3block'>
-          <img className='troisblock-img' src={troisblock} alt="3block" />
+          <img className='troisblock-img' src={BTP} alt="3block" />
         </div>
         <p className='card-reference'>Personal Side Project</p>
-        <h3 className='card-title'>3 blocks</h3>
+        <h3 className='card-title'>Lucie Amand</h3>
         <div className='card-tags'>
-          <div className='card-tag react'>React <FaReact /></div>
-          <div className='card-tag tailwind'>Tailwind <SiTailwindcss /></div>
-          <div className='card-tag javascript'>Javascript <SiJavascript /></div>
-          <div className='card-tag daisyui'>DaisyUI <SiDaisyui /></div>
+          <div className='card-tag react'> CMS by Hostinger <FaReact /></div>
+    
           
         </div>
-        <p className='card-description'>This website is a prototype of the first independent advertising dAgency. It aims to help web3 companies to manage and growth their communication.   </p>
+        <p className='card-description'>This website has been build for my sister. She is a construction professional and was looking to promote her projects. </p>
         <div className='card-links__3block'>
-          <a href="" target="_blank">
+          <a href="https://www.lucieamand.fr/" target="_blank">
             <div className='card-link card-link__3block github'>
               <OpenInNewRoundedIcon />
               <p className='card-link__view--text'>View online</p>
             </div>
           </a>
         </div>
-      </div>
+      </div>  
       {/* ---------------------------------------------------------------- */}
       <div className="card-wrapper">
         <div className='card-image-container portfolio'>
@@ -93,6 +92,27 @@ const Projects = () => (
         </div>
       </div>
       {/* ---------------------------------------------------------------- */}
+      <div className="card-wrapper">
+        <div className='card-image-container portfolio'>
+          <img className='portfolio1-img' src={girls} alt="personnages portefolio" />
+        </div>
+        <p className='card-reference'>Personal Side Project</p>
+        <h3 className='card-title'>Big headed</h3>
+        <div className='card-tags'>
+          <div className='card-tag html'>HTML <FaHtml5 /></div>
+          <div className='card-tag css'>CSS <FaSass /></div>
+          <div className='card-tag javascript'>Javascript <SiJavascript /></div>
+        </div>
+        <p className='card-description'>Site created for a friend who is an Art Director applying for a job to showcase recommendations.</p>
+        <div className='card-links__portfolio'>
+          <a href="https://www.big-headed.fun/">
+            <div className='card-link card-link__portfolio github'>
+              <OpenInNewRoundedIcon />
+              <p className='card-link__view--text'>View online</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </section >
 );

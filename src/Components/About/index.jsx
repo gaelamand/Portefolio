@@ -1,5 +1,5 @@
 import './styles.scss';
-import Gael2 from '../../assets/Gael2.jpg';
+import Designgael from '../../assets/Designgael.png';
 import { MdRadioButtonChecked } from "react-icons/md";
 
 const About = () => (
@@ -20,7 +20,7 @@ const About = () => (
         </ul>
       </div>
       <div className="about-container-right">
-        <img className="picture personal-picture" src={Gael2} alt="My picture" />
+        <img className="picture personal-picture" src={Designgael} alt="My picture" />
       </div>
     </div>
   </section>
