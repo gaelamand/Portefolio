@@ -1,4 +1,5 @@
 export default [
+  
   {
     title: 'Fullstack JS Web Developer',
     school: "O'Clock",

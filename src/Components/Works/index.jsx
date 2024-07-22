@@ -14,6 +14,11 @@ const Works = () => {
       <h2 className="work-title"><span className='numbers-span'>02.</span> Experience</h2>
       <div className="inner">
         <div className="tablist">
+        <button
+            className={toggleState === 6 ? "tablist-item tablist-item--active" : "tablist-item"}
+            onClick={() => toggleTab(6)}
+          >SYD DIGITAL CARE
+          </button>
           <button
             className={toggleState === 1 ? "tablist-item tablist-item--active" : "tablist-item"}
             onClick={() => toggleTab(1)}
@@ -41,7 +46,28 @@ const Works = () => {
           </button>
         </div>
 
+        
+
         <div className="content-tabs">
+
+
+        <div
+            className={toggleState === 6 ? "content active-content" : "content"}
+          >
+            <h3 className="tab-title">ERP Consultant<span className='company-span'>@ SYD DIGITAL CARE</span></h3>
+            <p className="tab-date">2023 to now</p>
+            <div className="tab-description">
+              <ul className="tab-description__list">
+                <li className="tab-description__list__item">1 Project implementation of Business Central for three companies in the TP</li>
+                <li className="tab-description__list__item">Management of master data, sales flow and interface with VP Planning</li>
+                <li className="tab-description__list__item">Design workshops (collect customer needs)</li>
+                <li className="tab-description__list__item">Solution configuration</li>
+                <li className="tab-description__list__item">Writing specifications for developers</li>
+                <li className="tab-description__list__item">Ongoing support</li>
+              </ul>
+            </div>
+          </div>
+          
           <div
             className={toggleState === 1 ? "content active-content" : "content"}
           >

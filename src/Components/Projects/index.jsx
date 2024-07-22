@@ -18,9 +18,9 @@ import { SiDaisyui } from "react-icons/si";
 const Projects = () => (
   <section id='projects' className="projects">
     <div className='projects-header'>
-      <h2 className="projects-title"><span className='numbers-span'>03.</span> Projects</h2>
+      <h2 className="projects-title"><span className='numbers-span'>03.</span> Web Projects</h2>
       <p>Discover the projects I have been working on in recent weeks and learn more by visiting them !</p>
-      <p className="projects-description">O'playgound was my endind project in O'clock. This is a Minimum Viable Product. The main goal was to implement 2 CRUD (profile creation and event management). Don't hesitate to test them !  3blocks is a prototype website for a friend. More projects are in Vuejs in the pipe !   </p>
+      <p className="projects-description">O'playgound was my endind project in O'clock. This is a Minimum Viable Product. The main goal was to implement 2 CRUD (profile creation and event management). Don't hesitate to test them !   </p>
     </div>
     <div className='cards-container'>
       <div className="card-wrapper">

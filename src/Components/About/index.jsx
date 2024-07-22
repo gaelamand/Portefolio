@@ -7,16 +7,17 @@ const About = () => (
     <h2 className="about-title"><span className='numbers-span'>01.</span> About me</h2>
     <div className="about-container">
       <div className="about-container-left">
-        <p className="about-text">After a successful experience in Supply Chain and IT system especially on SAP, I am now passionate about web development, which I have been thinking for many years! I am eager to be able to assist you in your missions!</p>
-        <p className="about-text">To train myself, I completed a full-stack JavaScript web developer course at O'Clock, a training center where I was able to study numerous front-end and back-end development concepts.</p>
-        <p className="about-text">Finally, I was able to join a team for a one-month project to create a website as it was for a company. In this project, I was paired with two team members to work on the front-end development of the application, and we were able to achieve our initial MVP goal! You can find more details about my background and projects in the rest of my portfolio ! Please feel free to browse it and contact me !</p>
+        <p className="about-text">After achieving notable success in the Supply Chain field, I developed an interest in information systems by participating in the ERP transition at my first employer. 
+          This initial experience set me on the path to a role as an SAP consultant, which I held for three years. However, despite this extensive professional experience, I felt the need to diversify and enhance my technical skills. I naturally chose JavaScript, a widely used web language, to begin this upskilling. Currently in a role as an ERP Consultant that does not fully align with my aspirations, 
+          I am determined to regain the interest I had 
+          for this profession with SAP, within a Supply context that forms the foundation of my training.</p>
         <ul className="about-list">
-          <li className="about-list-item"><MdRadioButtonChecked /> Javascript ES6+</li>
-          <li className="about-list-item"><MdRadioButtonChecked /> React</li>
-          <li className="about-list-item"><MdRadioButtonChecked /> Node.js</li>
-          <li className="about-list-item"><MdRadioButtonChecked /> PostgreSQL</li>
-          <li className="about-list-item"><MdRadioButtonChecked /> Express</li>
-          <li className="about-list-item"><MdRadioButtonChecked /> Tailwind</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> SAP ECC6</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> SAP S/4 HANA</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> SAP FIORI</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> Business Central</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> JDE/AS400</li>
+          <li className="about-list-item"><MdRadioButtonChecked /> Javascript</li>
         </ul>
       </div>
       <div className="about-container-right">
