@@ -3,6 +3,7 @@ import WebDev from '../../assets/projects/web-development.png';
 import oplayground from '../../assets/projects/oplayground.jpg';
 import BTP from '../../assets/projects/BTP.png';
 import girls from '../../assets/projects/girlshead.png';
+import Nico from '../../assets/projects/Nico.jpeg';
 
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import { FaReact } from "react-icons/fa";
@@ -91,6 +92,29 @@ const Projects = () => (
           </a>
         </div>
       </div>
+
+      {/* ---------------------------------------------------------------- */}
+      <div className="card-wrapper">
+        <div className='card-image-container 3block'>
+          <img className='troisblock-img' src={Nico} alt="3block" />
+        </div>
+        <p className='card-reference'>Personal Side Project</p>
+        <h3 className='card-title'>Nicolas Dionnet</h3>
+        <div className='card-tags'>
+          <div className='card-tag react'> CMS Wordpress <FaReact /></div>
+    
+          
+        </div>
+        <p className='card-description'>This website has been build for a client. He wanted a colorful and soothing website for his hypnotherapy practice. </p>
+        <div className='card-links__3block'>
+          <a href="https://nicolasdionnet-hypnotherapie.fr/" target="_blank">
+            <div className='card-link card-link__3block github'>
+              <OpenInNewRoundedIcon />
+              <p className='card-link__view--text'>View online</p>
+            </div>
+          </a>
+        </div>
+      </div>  
       {/* ---------------------------------------------------------------- */}
       <div className="card-wrapper">
         <div className='card-image-container portfolio'>
