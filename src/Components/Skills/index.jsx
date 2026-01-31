@@ -108,30 +108,6 @@ const Skills = () => {
           <p className='skill-name'>Tailwind</p>
         </div>
       </div>
-      {/* OTHER SKILLS */}
-      <h3 className='languages-title'>Other skills</h3>
-      <div className='skills-container'>
-        <div className='skill skill-project'>
-          <GoSettings className='skill-icon skill-icon__project' />
-          <p className='skill-name'>Project management</p>
-        </div>
-        <div className='skill skill-icon__scrum'>
-          <DiScrum className='skill-icon skill-icon__scrum' />
-          <p className='skill-name'>SCRUM</p>
-        </div>
-        <div className='skill skill-figma'>
-          <FaFigma className='skill-icon skill-icon__figma' />
-          <p className='skill-name'>Figma</p>
-        </div>
-        <div className='skill skill-excel'>
-          <AiFillFileExcel className='skill-icon skill-icon__excel' />
-          <p className='skill-name'>Pack office</p>
-        </div>
-        <div className='skill skill-sap'>
-          <SiSap className='skill-icon skill-icon__sap' />
-          <p className='skill-name'>SAP</p>
-        </div>
-      </div>
     </section>
   )
 }

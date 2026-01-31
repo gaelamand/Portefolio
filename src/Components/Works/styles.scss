@@ -97,8 +97,47 @@ button {
 //RESPONSIVE DESIGN
 @media screen and (max-width: 750px) {
 
+  .work {
+    text-align: center;
+  }
+
+  .work-title {
+    justify-content: center;
+  }
+
+  .work-title::after {
+    display: none;
+  }
+
+  .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tablist {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+  }
+
   .tablist-item {
     font-size: 0.9rem;
+    border-left: none;
+    border-bottom: #152d50 2px solid;
+    text-align: center;
+  }
+
+  .tablist-item--active {
+    border-left: none;
+    border-bottom: 3px #00d8ff solid;
+    text-align: center;
+  }
+
+  .content-tabs {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: left;
   }
 
   .tab-description {

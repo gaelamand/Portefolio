@@ -101,9 +101,42 @@
 @media screen and (max-width: 750px) {
 
   .title {
-    padding-top: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
     min-height: auto;
     height: auto;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .title-hello {
+    font-size: 1.8rem;
+  }
+
+  .title-name {
+    font-size: 3.5rem;
+    word-break: break-word;
+  }
+
+  .title-catch {
+    font-size: 2rem;
+    word-break: break-word;
+  }
+
+  .title-intro {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  @keyframes reveal {
+    80%{
+      letter-spacing: 3px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
   }
 }
 

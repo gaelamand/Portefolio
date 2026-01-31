@@ -126,6 +126,14 @@
 
 // REPONSIVE
 
+@media screen and (max-width: 750px) {
+
+  .skills-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
 
   .skill-icon {

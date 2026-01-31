@@ -6,11 +6,13 @@
 body {
   font-family: 'Golos Text', sans-serif;
   color: #e6f1ff;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 @keyframes logo-spin {

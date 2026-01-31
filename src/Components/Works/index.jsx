@@ -54,16 +54,16 @@ const Works = () => {
         <div
             className={toggleState === 6 ? "content active-content" : "content"}
           >
-            <h3 className="tab-title">ERP Consultant<span className='company-span'>@ SYD DIGITAL CARE</span></h3>
+            <h3 className="tab-title">Business Central Consultant<span className='company-span'>@ SYD DIGITAL CARE</span></h3>
             <p className="tab-date">2023 to now</p>
             <div className="tab-description">
               <ul className="tab-description__list">
-                <li className="tab-description__list__item">1 Project implementation of Business Central for three companies in the TP</li>
-                <li className="tab-description__list__item">Management of master data, sales flow and interface with VP Planning</li>
-                <li className="tab-description__list__item">Design workshops (collect customer needs)</li>
-                <li className="tab-description__list__item">Solution configuration</li>
-                <li className="tab-description__list__item">Writing specifications for developers</li>
-                <li className="tab-description__list__item">Ongoing support</li>
+                <li className="tab-description__list__item">Leading design workshops to gather and challenge business requirements (sales, purchasing, inventory, production)</li>
+                <li className="tab-description__list__item">Full configuration of Sales, Purchasing, Inventory, and Production modules</li>
+                <li className="tab-description__list__item">Master data management and structuring</li>
+                <li className="tab-description__list__item">Writing functional specifications for developments</li>
+                <li className="tab-description__list__item">User support and training</li>
+                <li className="tab-description__list__item">4 Go-live projects</li>
               </ul>
             </div>
           </div>

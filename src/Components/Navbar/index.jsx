@@ -76,7 +76,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 className="navbar-item-link">
-                <span className='navbar-span'>3.  </span>Projects
+                <span className='navbar-span'>3.  </span>Hobbies
               </ScrollLink>
             </li>
             <li
@@ -90,7 +90,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 className="navbar-item-link">
-                <span className='navbar-span'>4.  </span>Skills
+                <span className='navbar-span'>4.  </span>Web skills
               </ScrollLink>
             </li>
             <li

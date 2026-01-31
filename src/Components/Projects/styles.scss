@@ -13,7 +13,7 @@
 .projects-header {
   margin: 0 auto;
   max-width: 900px;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
   text-align: left;
 }
 
@@ -35,6 +35,74 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+// --------------- EVOLIA CARD -------------------
+.evolia-bg {
+  background: #6B9E6E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evolia-letter {
+  background: #6B9E6E;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.card-wrapper--rare {
+  position: relative;
+  overflow: visible;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(45deg, #6B9E6E, #00d8ff, #a855f7, #6B9E6E, #00d8ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: rare-border 3s ease infinite;
+  box-shadow:
+    0 0 15px rgba(107, 158, 110, 0.4),
+    0 0 30px rgba(107, 158, 110, 0.2),
+    0 0 45px rgba(0, 216, 255, 0.1);
+}
+
+@keyframes rare-border {
+  0%, 100% {
+    box-shadow:
+      0 0 15px rgba(107, 158, 110, 0.4),
+      0 0 30px rgba(107, 158, 110, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(0, 216, 255, 0.5),
+      0 0 40px rgba(168, 85, 247, 0.3),
+      0 0 60px rgba(107, 158, 110, 0.2);
+  }
+}
+
+// Evolya arrow
+.projects-evolya-text {
+  position: relative;
+}
+
+.evolya-word {
+  color: #6B9E6E;
+  font-weight: bold;
+}
+
+.evolya-arrow-svg {
+  display: block;
+  width: 200px;
+  height: 80px;
+  margin: 0.3rem 0 -1rem 0;
+  opacity: 0.8;
 }
 
 // --------------- BACKGROUND -------------------
@@ -168,6 +236,9 @@
 .ejs {
   background: #e9b7ca;
 }
+.claude {
+  background: #E8D5B5;
+}
 // ---------- FIN TAGS ----------
 
 .card-links__3block {
@@ -255,5 +326,36 @@ a {
 
   #projects {
     padding: 2rem;
+  }
+
+  .projects-header {
+    text-align: justify;
+  }
+
+  .projects-title {
+    text-align: center;
+  }
+
+  .evolya-arrow-svg {
+    margin: 0.3rem auto -1rem auto;
+  }
+
+  .card-links__3block,
+  .card-links__oplayground,
+  .card-links__portfolio {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .cards-container {
+    gap: 1rem;
+  }
+
+  a {
+    width: 100%;
   }
 }

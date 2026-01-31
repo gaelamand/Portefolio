@@ -1,5 +1,5 @@
 .about {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 10rem 2rem;
 }
@@ -41,26 +41,104 @@
   object-fit: cover;
 }
 
-.about-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
-  gap: 0px 10px;
-  padding: 0px;
-  margin: 20px 0px 0px;
-  overflow: hidden;
-  list-style: none;
+.about-text-highlight {
+  font-style: italic;
+  font-weight: bold;
+  border-left: 3px solid #00d8ff;
+  padding-left: 1rem;
+  margin-top: 1rem;
 }
 
-.about-list-item {
-  transition: .3s;
+.about-skills {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
-.about-list-item:hover {
-  color: #00d8ff;
-  cursor: default;
+// Skill cards
+.skill-card {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  &--sap {
+    border-top: 3px solid #0070f3;
+    &:hover { border-color: #0070f3; }
+    .skill-card__icon { color: #0070f3; }
+  }
+
+  &--microsoft {
+    border-top: 3px solid #00d8ff;
+    &:hover { border-color: #00d8ff; }
+    .skill-card__icon { color: #00d8ff; }
+  }
+
+  &--other {
+    flex: 2;
+    border-top: 3px solid #a855f7;
+    &:hover { border-color: #a855f7; }
+    .skill-card__icon { color: #a855f7; }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    font-size: 0.7rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+
+    &--two-cols {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__item {
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    padding-left: 1rem;
+    position: relative;
+    transition: color 0.3s, padding-left 0.3s;
+
+    &::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      transition: color 0.3s;
+    }
+
+    &:hover {
+      color: #00d8ff;
+      padding-left: 1.3rem;
+      cursor: default;
+    }
+  }
 }
 
 // REPONSIVE DESIGN
@@ -79,9 +157,35 @@
     order: 2;
   }
 
+  .about-container-left {
+    text-align: justify;
+  }
+
   .about-container-right {
     width: 70%;
     margin: 0 auto;
     order: 1;
+  }
+
+  .about-text-highlight {
+    text-align: justify;
+  }
+
+  .about-skills {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skill-card--microsoft {
+    order: -1;
+  }
+
+  .skill-card--sap .skill-card__list,
+  .skill-card--microsoft .skill-card__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-card--other {
+    flex: 1;
   }
 }
