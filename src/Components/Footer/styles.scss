@@ -6,7 +6,49 @@
 
 .form-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-intro {
+  max-width: 55ch;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  color: #ccd6f6;
+  line-height: 1.7;
+}
+
+.contact-direct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 3rem auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #ccd6f6;
+
+    a {
+      color: #ccd6f6;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #00d8ff;
+      }
+    }
+  }
+
+  &__icon {
+    color: #00d8ff;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
 }
 
 form {

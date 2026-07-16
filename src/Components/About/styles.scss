@@ -15,6 +15,11 @@
 
 .about-text {
   line-height: 1.7;
+
+  strong {
+    color: #00d8ff;
+    font-weight: 600;
+  }
 }
 
 .about-container-right {
@@ -70,23 +75,25 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
-  &--sap {
-    border-top: 3px solid #0070f3;
-    &:hover { border-color: #0070f3; }
-    .skill-card__icon { color: #0070f3; }
-  }
-
-  &--microsoft {
+  &--ai {
+    flex: 2;
     border-top: 3px solid #00d8ff;
+    background: rgba(0, 216, 255, 0.04);
     &:hover { border-color: #00d8ff; }
     .skill-card__icon { color: #00d8ff; }
   }
 
-  &--other {
+  &--build {
     flex: 2;
     border-top: 3px solid #a855f7;
     &:hover { border-color: #a855f7; }
     .skill-card__icon { color: #a855f7; }
+  }
+
+  &--erp {
+    border-top: 3px solid #0070f3;
+    &:hover { border-color: #0070f3; }
+    .skill-card__icon { color: #0070f3; }
   }
 
   &__header {
@@ -176,16 +183,12 @@
     gap: 1rem;
   }
 
-  .skill-card--microsoft {
-    order: -1;
-  }
-
-  .skill-card--sap .skill-card__list,
-  .skill-card--microsoft .skill-card__list {
+  .skill-card--erp .skill-card__list {
     grid-template-columns: 1fr 1fr;
   }
 
-  .skill-card--other {
+  .skill-card--ai,
+  .skill-card--build {
     flex: 1;
   }
 }

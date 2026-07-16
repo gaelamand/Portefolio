@@ -1,19 +1,19 @@
 export default [
-  
   {
-    title: 'Fullstack JS Web Developer',
-    school: "O'Clock",
-    text: 'HTML, CSS, Javascript, ReactJS, NodeJS, PostreSQL and more... ',
-    date: 'September 2022 to March 2023',
+    title: 'Développeur web Fullstack JavaScript',
+    school: "École O'clock",
+    text: "Formation intensive de 6 mois. Projet de fin de formation : développement front-end de l'application O'playground en équipe de 5, méthode Agile (React, Next.js, Tailwind, Axios, React Hook Form).",
+    date: '2022 - 2023',
   },
   {
-    title: 'Msc Supply Chain Management',
+    title: 'Master of Science, Supply Chain Management',
     school: 'RENNES SCHOOL OF BUSINESS',
     date: '2015 - 2016',
   },
   {
-    title: 'Bachelor in Engeneering management',
+    title: 'BEng Engineering Management',
     school: 'UNIVERSITY OF THE WEST OF SCOTLAND',
+    text: "Un an d'études universitaires à Glasgow, au Royaume-Uni.",
     date: '2014 - 2015',
   },
   {
